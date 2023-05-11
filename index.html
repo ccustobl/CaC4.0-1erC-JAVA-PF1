@@ -1,0 +1,189 @@
+<!--
+-------------------------------- 
+ Author: Custo Blanch, Christian 
+ Project: Proyecto Final
+ CaC 4.0
+ -------------------------------- 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head  -------------------------------- -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christian Custo Blanch">
+    <meta name="description" content="Sitio web de conferencia.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="CaC 4.0 - JAVA - Proyecto Final">
+    <meta name="copyright" content="Christian Custo Blanch">
+    <meta name="keywords" content="oradores, evento, bill gates, steve jobs, ada lovelace, buenos aires, octubre, codo a codo">
+    <title>Proyecto Final</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Fontawesome Kit -->
+    <script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- External Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<!-- Body  -------------------------------- -->
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark colorGrey">
+
+            <!-- Logo --> 
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/codoacodo.png" alt="Logo" width="70px" class="d-inline-block align-text-top">
+                Conf. Bs.As.
+            </a>
+
+            <!-- Toggler --> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- List-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#laConferencia">La Conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#losOradores">Los Oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lugarYFecha">Lugar y La Fecha</a>
+                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#convierteteEnOrador">Conviertete en Orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorVerde" href="./pages/comprar_tickets.html">Comprar tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- The Conference -->
+        <section id ="laConferencia" class="laConferencia ">
+            <div class="contenedorTextoConferencia">
+                <h1>Conferencia Bs.As.</h1>
+                <p class="parrafoConferencia"> Llega por primera vez a la Argentina un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                <div class="botones">
+                    <a href="#convierteteEnOrador" class="btn btn-outline-light">Quiero ser orador</a>
+                    <a href="./pages/comprar_tickets.html" class="btn btn-success">Comprar tickets</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Orators -->
+        <section id="losOradores" class="container mb-5">
+            <h2 class="tituloOradores"><span class="conoce">CONOCE A LOS</span> <br> ORADORES</h2>
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="card resizable" >
+                        <img src="./assets/img/steve.jpg" alt="Steve Jobs" class="card-img-top">
+                        <div class="card-Tags">
+                            <h4 class="javaScript">Javascript</h4>
+                            <h4 class="react">React</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Steve Jobs</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id arcu leo. Fusce interdum diam sed purus facilisis, ut molestie arcu porttitor. Ut bibendum porttitor lacus, et cursus risus. Etiam varius nisl ullamcorper tellus accumsan scelerisque.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card resizable" >
+                        <img src="./assets/img/bill.jpg" alt="Bill Gates" class="card-img-top" >
+                        <div class="card-Tags">
+                            <h4 class="javaScript">Javascript</h4>
+                            <h4 class="react">React</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Bill Gates</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id arcu leo. Fusce interdum diam sed purus facilisis, ut molestie arcu porttitor. Ut bibendum porttitor lacus, et cursus risus. Etiam varius nisl ullamcorper tellus accumsan scelerisque.</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="card resizable">
+                        <img src="./assets/img/ada.jpeg" alt="Ada Lovelace" class="card-img-top">
+                        <div class="card-Tags">
+                            <h4 class="negocios">Negocios</h4>
+                            <h4 class="startups">Startups</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ada Lovelace</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id arcu leo. Fusce interdum diam sed purus facilisis, ut molestie arcu porttitor. Ut bibendum porttitor lacus, et cursus risus. Etiam varius nisl ullamcorper tellus accumsan scelerisque.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Time and Place -->
+        <section id="lugarYFecha" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 columnaIzq">
+                </div>
+                <div class="col-sm-12 col-md-6 columnaDer">
+                    <h2>Bs.As - Octubre</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id arcu leo. Fusce interdum diam sed purus facilisis, ut molestie arcu porttitor. Ut bibendum porttitor lacus, et cursus risus. Etiam varius nisl ullamcorper tellus accumsan scelerisque.</p>
+                    <a href="" class="btn btn-outline-light">Conocé Más</a>
+                </div>
+            </div>        
+        </section>
+
+
+        <!-- Become an Orator -->
+        <section id="convierteteEnOrador" class="formularioOrador">
+            <h2><span class="conoce">CONVIERTETE EN UN </span> <br> ORADOR</h2>
+            <p>Anótate como orador para dar una <span class="charlaIgnite">charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+            <form action="" autocomplete="on">
+                <div>
+                    <input  class="inputNA" type="text" placeholder="Nombre" required>
+                    <input class="inputNA" type="text" placeholder="Apellido" required>
+                </div>
+                <div>
+                    <textarea class="textArea" name="" id="" cols="44" rows="6" placeholder="¿Sobre qué quieres hablar?" required></textarea>
+                </div>
+                <p>Recuerda incluir un título para tu charla.</p>
+                <div>
+                    <input type="submit" value="Enviar" class="formSubmit">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer">
+            <a class="col-sm-12 col-md-2" href="">Preguntas Frecuentes</a>
+            <a class="col-sm-12 col-md-2" href="">Contáctanos</a>
+            <a class="col-sm-12 col-md-1" href="">Prensa</a>
+            <a class="col-sm-12 col-md-2" href="">Conferencias</a>
+            <a class="col-sm-12 col-md-2" href="">Términos y Condiciones</a>
+            <a class="col-sm-12 col-md-1" href="">Privacidad</a>
+            <a class="col-sm-12 col-md-1" href="">Estudiantes</a>
+        </div>
+        <div class="redes">
+            <a href=""><i class="fa-brands fa-instagram iconInstagram"></i></a>
+            <a href=""><img class="wsp" src="./assets/img/whatsapp.png" alt="what"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+/*
+-------------------------------- 
+ Author: Custo Blanch, Christian 
+ Project: Proyecto Final
+ CaC 4.0
+ -------------------------------- 
+*/
+
+/*Cleaning*/
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*General*/
+body{
+    font-family: 'Anuphan', sans-serif;
+}
+.colorGrey{
+    background-color: rgb(53,58,64);
+}
+.navbar-dark .navbar-nav .colorVerde{
+    color: rgb(40, 196, 89);    
+}
+.navbar-dark .navbar-nav {
+    margin-right: 5%;    
+}
+.navbar-toggler{
+    margin-right: 5%;    
+}
+.navbar img{
+    margin-left: 20%;
+}
+.navbar-collapse{
+    text-align: center;
+}
+ 
+/*La Conferencia*/
+.laConferencia{
+    height: 80vh;
+    background:linear-gradient(to bottom,#0000007a, #0000007a,#0000007a), url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.contenedorTextoConferencia{
+    width:40%;
+    color:white;
+    text-align: right;
+    margin-right: 10%;
+    padding-top: 10%;
+    height: 80vh;
+}
+
+/*Oradores*/
+.tituloOradores{
+    text-align: center;
+}
+.conoce{
+    font-size: 0.8rem;
+}
+.card{
+    border-radius: 2%;
+    border: 1px solid rgb(221, 221, 221);
+}
+.card-img{
+    width: 100%;
+    height: 500px;
+    border-radius: 10%;
+    object-fit: cover;
+    border-radius: 1% 1% 0px 0px;   
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-text{
+    text-align: justify;
+}
+.card-Tags h4{
+    margin-top: 6%;
+    display:inline-block;
+    flex-direction: column;
+    border-radius: 10%;
+    font-size: 80%;
+    font-family: 'Anuphan', sans-serif;    
+    text-align: center;
+    font-weight: bold;
+    padding: 0.8%
+}
+.javaScript{
+    background-color:rgb(255, 196, 0);
+    color: black;    
+    width:  21%;
+    margin-left: 4.5%;
+}
+.react{
+    background-color:rgb(16, 151, 88);
+    color:white;
+    width:  14%;
+    margin-left: 2%;
+}
+.negocios{
+    background-color:rgb(109, 109, 108);
+    color:white;  
+    width:  21%;
+    margin-left: 4.5%;
+}
+.startups{
+    background-color:rgba(231, 4, 4, 0.74);
+    color:white;   
+    width:  21%;
+    margin-left: 2%;
+}
+.resizable{
+    transition: transform 0.15s ease-in-out;
+}
+.resizable:hover{
+    transform: scale(1.05);
+}
+
+/*LugarYFecha*/
+.columnaIzq{
+    background-image: url("../assets/img/honolulu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+.columnaDer{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    background-color:rgba(41, 41, 41, 0.925);
+    color:white;
+    height: 60vh;
+}
+.columnaDer h2{
+    font-weight: 600;
+}
+
+/*ConviérteteEnOrador*/
+.formularioOrador{
+    width:60%;
+    height: 23rem;
+    margin:2rem auto;
+    text-align: center;
+}
+.inputNA{
+    width: 48.5%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(198, 198, 198);
+    padding-left: 0.5rem;
+}
+.textArea{
+    width: 98%;
+    height: 6rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(198, 198, 198);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: x-large;
+}
+.charlaIgnite{
+    border-bottom: 2px dotted #000;
+    text-decoration: none;
+}
+.formSubmit{
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+    border: 1px solid rgb(104, 160, 78);
+    background-color: rgb(104, 160, 78);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*Footer*/
+.footer{
+    display: block;
+    text-align: center;
+    background:linear-gradient( to right, #1d3947,#1d4962, #1e5372) ;
+    background-color: rgb(47, 47, 47);
+    padding: 2vh;
+}
+.footer a{
+    color:white;
+    text-decoration: none;
+    padding: 2vh;
+    font-size: 120%;
+}
+.wsp{
+    height: 3rem;
+    width: 3rem;
+    margin: 0 1rem;
+    object-fit: cover;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+.iconInstagram{
+   font-size: 3rem;
+   color: rgb(238, 71, 99);
+   position: fixed;
+   bottom: 1rem;
+   left: 1rem;   
+}
+
+/*Media Queries*/
+@media screen and (max-width:767px) {
+    .navbar img{
+        margin-left: 10%;
+    }
+    .navbar a{
+        align-items: center;
+    }
+    .navbar-collapse{
+        text-align: center;
+        background-color: rgb(43, 49, 56)
+    }
+    .laConferencia{
+        justify-content: center;        
+    }
+    .contenedorTextoConferencia{
+        text-align: center;
+        
+    }
+    .contenedorTextoConferencia h1{
+        text-align: center;
+        margin-left: 12%;
+    }
+    .parrafoConferencia{
+        text-align: justify;
+        width: 190%;
+        margin-left: -32%;
+    }
+    .btn{
+        margin-left: 3%;
+    }
+    .columnaDer{
+        text-align: justify;
+        height: 46vh;
+    }
+    .formularioOrador{
+        width: 90%;
+    }
+    .footer{
+        padding: 2vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .botones{
+        align-items: center;
+        display: flex; 
+    }
+     
+}
+
+@media screen and (min-width: 768px) and (max-width:993px) {
+
+    .formularioOrador{
+        width: 80%;
+    }
+    .footer{
+        padding: 2vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .botones{
+        align-items: center;
+        display: flex; 
+    }
+}
+
+@media screen and (min-width: 994px) and (max-width:1299px) {
+
+}
+
+@media screen and (min-width: 1300px) and (max-width:1399px) {
+    
+}
