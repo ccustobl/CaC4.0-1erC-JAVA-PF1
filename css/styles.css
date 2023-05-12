@@ -40,13 +40,13 @@ body{
 /*La Conferencia*/
 .laConferencia{
     height: 80vh;
-    background:linear-gradient(to bottom,#0000007a, #0000007a,#0000007a), url("../assets/img/ba1.jpg");
+    background:linear-gradient(to bottom,#000000ab, #0000007a,#0000007a), url("../assets/img/ba1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content:flex-end;
+    justify-content: flex-end;
 }
 .contenedorTextoConferencia{
     width:40%;
@@ -55,6 +55,65 @@ body{
     margin-right: 10%;
     padding-top: 10%;
     height: 80vh;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,#000000ab, #0000007a,#0000007a) !important; 
+    z-index: 3;
+}
+  
+.carousel-background img {
+    position: relative;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,#000000ab, #0000007a,#0000007a) !important;
+    z-index: 3;
+}
+  
+.carousel-caption {
+    position: absolute;
+    transform: translateY(-100%);
+    text-align: center; 
+    color: #fff;
+    background: linear-gradient(to bottom,#000000c2, #000000a2,#0000007a) !important;
+    z-index: 3;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /*Oradores*/
@@ -153,7 +212,7 @@ body{
 /*ConviérteteEnOrador*/
 .formularioOrador{
     width:60%;
-    height: 23rem;
+    height: 27rem;
     margin:2rem auto;
     text-align: center;
 }
@@ -167,13 +226,17 @@ body{
 }
 .textArea{
     width: 98%;
-    height: 6rem;
+    height: 10rem;
     margin-bottom: 1rem;
     border-radius: 5px;
     border: 1px solid rgb(198, 198, 198);
     padding-left: 1rem;
     padding-top: 1rem;
-    font-size: x-large;
+    font-size: large;
+}
+.reminder{
+    color: gray;
+    text-align: left;
 }
 .charlaIgnite{
     border-bottom: 2px dotted #000;
@@ -240,6 +303,10 @@ body{
     .contenedorTextoConferencia{
         text-align: center;
         
+    }
+    .carousel-caption {
+        transform: translateY(20vh);
+        height: 50vh;
     }
     .contenedorTextoConferencia h1{
         text-align: center;

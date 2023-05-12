@@ -81,6 +81,49 @@
                 </div>
             </div>
         </section>
+
+        <!-- Carousel -->
+        <section id="carouselSection">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carousel" data-bs-slide-to="2"></li>
+                </ol>
+                
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/ba1.jpg" class="d-block w-100" alt="First Image">
+                        <div class="carousel-caption">
+                            <h5>Conferencia Bs.As.</h5>
+                            <p>Llega por primera vez a la Argentina un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                            <div class="carousel-buttons">
+                                <a href="#convierteteEnOrador" class="btn btn-outline-light">Quiero ser orador</a>
+                                <a href="./pages/comprar_tickets.html" class="btn btn-success">Comprar tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/ba2.jpg" class="d-block w-100" alt="Second Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/ba3.jpg" class="d-block w-100" alt="Third Image">
+                    </div>
+                </div>
+                
+                <!-- Navigation Buttons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
     </header>
 
     <!-- Main -->
@@ -160,7 +203,7 @@
                 <div>
                     <textarea class="textArea" name="" id="" cols="44" rows="6" placeholder="¿Sobre qué quieres hablar?" required></textarea>
                 </div>
-                <p>Recuerda incluir un título para tu charla.</p>
+                <p class="reminder">Recuerda incluir un título para tu charla.</p>
                 <div>
                     <input type="submit" value="Enviar" class="formSubmit">
                 </div>
