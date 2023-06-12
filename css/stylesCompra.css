@@ -88,7 +88,18 @@ body{
     font-size: 1rem;
 }
 
-/*ConviérteteEnOrador*/
+/*Error Messages*/
+.error-message {
+    color: red;
+}
+.error-placeholder::placeholder {
+    color: rgba(136, 2, 2, 0.788);
+}
+.error-input {
+    border-color: red;
+  }
+
+/*Formulario*/
 .formularioOrador{
     width:60%;
     height: 27rem;

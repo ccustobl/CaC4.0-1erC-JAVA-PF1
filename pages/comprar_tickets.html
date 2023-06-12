@@ -127,29 +127,34 @@
                         <form id="formulario1" class="form" name="formulario1" method="post">                                
                             <div class="row px-0">
                                 <div class="col-sm-12 col-md-6 pb-3">
-                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre" required>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre">
+                                    <span id="error-nombre" class="error-message"></span>
                                 </div>
                                 <div class="col-sm-12 col-md-6 pb-3">
-                                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" aria-label="Apellido" required>
+                                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" aria-label="Apellido">
+                                    <span id="error-apellido" class="error-message"></span>
                                 </div>
                                 <div class="col-sm-12 pb-3">
-                                    <input type="email" class="form-control" id="email-form" placeholder="Correo" name="Correo" required>
+                                    <input type="email" class="form-control" id="email-form" placeholder="Correo" name="Correo">
+                                    <span id="error-correo" class="error-message"></span>
                                 </div>
                             </div>                                    
                             <div class="CantCat row px-0">
                                 <div class="Cantidad col-sm-12 col-md-6 pb-3">
                                     <label for="" class="Cantidad">Cantidad</label>
-                                    <input id="cantidad" type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" required>
+                                    <input id="cantidad" type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
+                                    <span id="error-cantidad" class="error-message"></span>
                                 </div>
                                 <div class="Categoria col col-sm-12 col-md-6 pb-3">
                                     <label for="" class="Categoria">Categoria</label>
-                                    <select id="categoria" name="categoria" class="form-select" aria-label="Default select example" type="checkbox" required>
-                                        <option selected value="selected">Selecciona una opcion</option>
+                                    <select id="categoria" name="categoria" class="form-select" aria-label="Default select example" type="checkbox">
+                                        <option selected value="selected">Seleccione una opción</option>
                                         <option value="estandar">Estándar</option>
                                         <option value="estudiante">Estudiante</option>
                                         <option value="trainee">Trainee</option>
                                         <option value="junior">Junior</option>
-                                    </select>                                        
+                                    </select>
+                                    <span id="error-categoria" class="error-message"></span>                                        
                                 </div>
                             </div>                                
                             <div class="row" style="margin-right: 0px; margin-left: 0px; margin-bottom: 3px;">
